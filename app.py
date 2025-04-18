@@ -18,8 +18,10 @@ def login():
 
         if email in ALLOWED_EMAILS and ALLOWED_EMAILS[email] == password:
             return render_template('welcome.html', user=email.split('@')[0], flag=LOGIN_SUCCESS_FLAG)
+        elif email in ALLOWED_EMAILS and ALLOWED_EMAILS[email] != password:
+            return render_template('login.html', error="Invalid Password.")
         else:
-            return render_template('login.html', error="Invalid credentials.")
+            return render_template('login.html', error="Email does not exist.")
 
     return render_template('login.html')
 
