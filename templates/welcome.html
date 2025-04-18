@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-10 rounded-lg shadow-lg text-center max-w-lg w-full">
+        <h1 class="text-3xl font-bold mb-4">Welcome, {{ user }}!</h1>
+        <p class="text-lg">Your flag:</p>
+        <p class="mt-2 text-xl font-mono text-green-700 bg-green-100 p-2 rounded inline-block">{{ flag }}</p>
+    </div>
+</body>
+</html>
