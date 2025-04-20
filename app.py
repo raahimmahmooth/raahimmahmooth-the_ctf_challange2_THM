@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 ALLOWED_EMAILS = {
-    'asmith@gmail.com': '123456789'
+    'wsimmons@gmail.com': '123456789'
 }
 
 LOGIN_SUCCESS_FLAG = 'THM{try_to_find_me}'
